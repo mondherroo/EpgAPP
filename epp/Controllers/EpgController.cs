@@ -29,15 +29,15 @@ namespace epp.Controllers
         {
             var now = DateTime.Now;
 
-            
+
             var client = new RestClient("https://localhost:44342/");
             var request = new RestRequest(Method.GET);
             IRestResponse response = client.Execute(request);
             if (response.IsSuccessful == false) return NotFound();
             var cont = JsonConvert.DeserializeObject<List<EpgProgram>>(response.Content);
-            
-            
-                var result = new EpgResult
+
+
+            var result = new EpgResult
                 {
                     channel_Id = epgRequest.ChannelId,
                     channel_Name = epgRequest.ChannelName,

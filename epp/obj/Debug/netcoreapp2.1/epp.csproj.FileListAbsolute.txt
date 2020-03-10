@@ -32,3 +32,37 @@ C:\Users\Administrator\source\repos\epp\epp\obj\Debug\netcoreapp2.1\epp.Views.pd
 C:\Users\Administrator\source\repos\epp\epp\obj\Debug\netcoreapp2.1\epp.dll
 C:\Users\Administrator\source\repos\epp\epp\obj\Debug\netcoreapp2.1\epp.pdb
 C:\Users\Administrator\source\repos\epp\epp\obj\Debug\netcoreapp2.1\epp.csproj.CopyComplete
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\appsettings.json
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\epp.deps.json
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\epp.runtimeconfig.json
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\epp.runtimeconfig.dev.json
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\epp.dll
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\epp.pdb
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\epp.Views.dll
+D:\RB Group Streaming Solution\EpgAPP\epp\bin\Debug\netcoreapp2.1\epp.Views.pdb
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.csprojAssemblyReference.cache
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.RazorAssemblyInfo.cache
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.RazorAssemblyInfo.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.AssemblyInfoInputs.cache
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.AssemblyInfo.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.TagHelpers.input.cache
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.TagHelpers.output.cache
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.RazorCoreGenerate.cache
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.RazorTargetAssemblyInfo.cache
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.RazorTargetAssemblyInfo.cs
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.Views.pdb
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.dll
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.pdb
+D:\RB Group Streaming Solution\EpgAPP\epp\obj\Debug\netcoreapp2.1\epp.csproj.CopyComplete

@@ -59,8 +59,12 @@ namespace epp.Controllers
                 if (_memoryCache.TryGetValue("epg", out EpgResult re)) return Ok(re);
                 if (result == null) return NotFound();
                  re = result;
-                _memoryCache.Set("epg", re, new MemoryCacheEntryOptions()
-                    .SetSlidingExpiration(TimeSpan.FromHours(1)));
+            DateTime ts = DateTime.Parse(result.chanel_Program_Now.program_Stop);
+            DateTime tn = DateTime.Parse(now.TimeOfDay.ToString());
+            var Intime = (ts - tn).TotalHours.ToString();
+            double.TryParse(Intime, out double ExTime);
+            _memoryCache.Set("epg", re, new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromHours(ExTime)));
                 return Ok(re);
         }
 

@@ -24,7 +24,7 @@ namespace epp.Controllers
         }
 
 
-        [HttpPost, HttpGet]
+        [HttpPost]
         public IActionResult GetEpg([FromBody]EpgRequest epgRequest)
         {
             var now = DateTime.Now;

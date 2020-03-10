@@ -35,7 +35,7 @@ namespace epp
 
         //    services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-        services.AddControllersWithViews();
+        services.AddControllersWithViews().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +56,11 @@ namespace epp
             app.UseCookiePolicy();
 
             app.UseRouting();
-            app.UseEndpoints(endpoints => { endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}"); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("api", "api/{version}/{clientRoute}/live/epg");
+            });
 
             //app.UseMvc(routes =>
             //{

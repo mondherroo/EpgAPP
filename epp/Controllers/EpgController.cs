@@ -35,8 +35,11 @@ namespace epp.Controllers
             IRestResponse response = client.Execute(request);
             if (response.IsSuccessful == false) return NotFound();
             var cont = JsonConvert.DeserializeObject<List<EpgProgram>>(response.Content);
-            
-            
+
+            var Fdate = cont.Where(m => m.Finish > now).Select(m => m.Finish).FirstOrDefault();
+
+            if (Fdate > now)
+            {
                 var result = new EpgResult
                 {
                     channel_Id = epgRequest.ChannelId,
@@ -58,14 +61,16 @@ namespace epp.Controllers
                 };
                 if (_memoryCache.TryGetValue(epgRequest.ChannelName, out EpgResult re)) return Ok(re);
                 if (result == null) return NotFound();
-                 re = result;
-            DateTime ts = DateTime.Parse(result.chanel_Program_Now.program_Stop);
-            DateTime tn = DateTime.Parse(now.TimeOfDay.ToString());
-            var Intime = (ts - tn).TotalHours.ToString();
-            double.TryParse(Intime, out double ExTime);
-            _memoryCache.Set(epgRequest.ChannelName, re, new MemoryCacheEntryOptions()
-                    .SetSlidingExpiration(TimeSpan.FromHours(ExTime)));
+                re = result;
+                DateTime ts = DateTime.Parse(result.chanel_Program_Now.program_Stop);
+                DateTime tn = DateTime.Parse(now.TimeOfDay.ToString());
+                var Intime = (ts - tn).TotalHours.ToString();
+                double.TryParse(Intime, out double ExTime);
+                _memoryCache.Set(epgRequest.ChannelName, re, new MemoryCacheEntryOptions()
+                        .SetSlidingExpiration(TimeSpan.FromHours(ExTime)));
                 return Ok(re);
+            }
+            return Ok();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -56,14 +56,14 @@ namespace epp.Controllers
                         program_Stop = cont.Where(m => m.Start >= now && m.ChannelId.Contains(epgRequest.ChannelName)).Select(m => m.Finish).FirstOrDefault().ToString()
                     }
                 };
-                if (_memoryCache.TryGetValue("epg", out EpgResult re)) return Ok(re);
+                if (_memoryCache.TryGetValue(epgRequest.ChannelName, out EpgResult re)) return Ok(re);
                 if (result == null) return NotFound();
                  re = result;
             DateTime ts = DateTime.Parse(result.chanel_Program_Now.program_Stop);
             DateTime tn = DateTime.Parse(now.TimeOfDay.ToString());
             var Intime = (ts - tn).TotalHours.ToString();
             double.TryParse(Intime, out double ExTime);
-            _memoryCache.Set("epg", re, new MemoryCacheEntryOptions()
+            _memoryCache.Set(epgRequest.ChannelName, re, new MemoryCacheEntryOptions()
                     .SetSlidingExpiration(TimeSpan.FromHours(ExTime)));
                 return Ok(re);
         }
